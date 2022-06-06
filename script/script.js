@@ -47,7 +47,7 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-function game() {
+onload = function game() {
   for (let i = 0; i < 5; i++) {
     const roundNumber = `---This is round number ${i + 1}---`;
     const playerSelection = prompt("Rock, paper or scissors?");
@@ -68,6 +68,4 @@ function game() {
   } else {
     console.log("Computer wins!");
   }
-}
-
-game();
+};
