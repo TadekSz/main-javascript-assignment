@@ -10,38 +10,39 @@ function computerPlay() {
 }
 
 function playRound(playerSelection, computerSelection) {
-  const currentMatch = `${playerSelection} vs ${computerSelection}`;
+  const cWin = `${computerSelection} beats ${playerSelection}`;
+  const pWin = `${playerSelection} beats ${computerSelection}`;
   if (playerSelection === computerSelection) {
-    alert(`${currentMatch} is a Tie`);
+    alert(`${computerSelection} vs ${playerSelection} is a Tie`);
     return;
   }
 
   if (playerSelection === "Rock") {
     if (computerSelection === "Scissors") {
-      alert(`You Win! ${currentMatch}.`);
+      alert(`You Win! ${pWin}.`);
       pScore++;
     } else {
-      alert(`Computer Wins! ${currentMatch}.`);
+      alert(`Computer Wins! ${cWin}.`);
       cScore++;
     }
   }
   //Check for Paper
   else if (playerSelection === "Paper") {
     if (computerSelection === "Rock") {
-      alert(`You Win! ${currentMatch}.`);
+      alert(`You Win! ${pWin}.`);
       pScore++;
     } else {
-      alert(`Computer Wins! ${currentMatch}.`);
+      alert(`Computer Wins! ${cWin}.`);
       cScore++;
     }
   }
   //Check for Scissors
   else {
     if (computerSelection === "Paper") {
-      alert(`You Win! ${currentMatch}.`);
+      alert(`You Win! ${pWin}.`);
       pScore++;
     } else {
-      alert(`Computer Wins! ${currentMatch}.`);
+      alert(`Computer Wins! ${cWin}.`);
       cScore++;
     }
   }
