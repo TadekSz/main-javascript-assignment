@@ -18,30 +18,30 @@ function playRound(playerSelection, computerSelection) {
 
   if (playerSelection === "Rock") {
     if (computerSelection === "Scissors") {
-      alert(`${currentMatch} = You Win`);
+      alert(`You Win! ${currentMatch}.`);
       pScore++;
     } else {
-      alert(`${currentMatch} = Computer Wins`);
+      alert(`Computer Wins! ${currentMatch}.`);
       cScore++;
     }
   }
   //Check for Paper
   else if (playerSelection === "Paper") {
     if (computerSelection === "Rock") {
-      alert(`${currentMatch} = You Win`);
+      alert(`You Win! ${currentMatch}.`);
       pScore++;
     } else {
-      alert(`${currentMatch} = Computer Wins`);
+      alert(`Computer Wins! ${currentMatch}.`);
       cScore++;
     }
   }
   //Check for Scissors
   else {
     if (computerSelection === "Paper") {
-      alert(`${currentMatch} = You Win`);
+      alert(`You Win! ${currentMatch}.`);
       pScore++;
     } else {
-      alert(`${currentMatch} = Computer Wins`);
+      alert(`Computer Wins! ${currentMatch}.`);
       cScore++;
     }
   }
@@ -62,10 +62,10 @@ onload = function game() {
   }
   console.log("Game over!");
   if (pScore > cScore) {
-    console.log("Player wins!");
+    console.log("Player wins the game!");
   } else if (cScore === pScore) {
     console.log("It's a tie!");
   } else {
-    console.log("Computer wins!");
+    console.log("Computer wins the game!");
   }
 };
